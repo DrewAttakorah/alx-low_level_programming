@@ -1,8 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-/*Search random numbers and compare to zero*/
-/* betty style doc for function main goes there */
+#include <stdio.h>
+/**
+ * main - the main block
+ * Description: Get a random number and print the number
+ * and if the number is positive or negative or zero
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
@@ -11,18 +15,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("is positive");
+		printf("%d is positive\n", n);
 	}
-	else if (n == 0) 
+	else if (n == 0)
 	{
-		printf("is zero");
-	}
-	else if (n < 0)
-	{
-		printf("is negative");
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-	return (0);
+		printf("%d is negative \n", n)
 	}
+	return (0);
 }
