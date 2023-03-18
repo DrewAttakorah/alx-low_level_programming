@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	char ant = 'z';
+	char ant = 'a';
 
-	for (ant = 0; ant <= 0; ant--)
+	for (ant = 'a'; ant <= 'a'; ant--)
 	{
 		putchar(ant);
 	}
