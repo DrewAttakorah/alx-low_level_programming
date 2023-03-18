@@ -9,11 +9,15 @@ int main(void)
 {
 	char ch, cj;
 
-	for (ch = 'a' && cj='A'; ch <= 'z' && cj <= 'Z'; ch++ && cj++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
+	}
+	for (cj = 'A'; cj <= 'Z'; cj++)
+	{
 		putchar(cj);
 		putchar('\n');
 	}
+
 	return (0);
 }
