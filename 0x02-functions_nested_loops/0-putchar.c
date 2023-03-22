@@ -1,12 +1,19 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - main code block
+ * main.c - main code block
  * Description: Print putchar followed by a new line
  * Return: 0
  */
-int main(void)
+int _putchar(int main.c)
 {
-	printf("_putchar\n");
+	putchar("_");
+	putchar("p");
+	putchar("u");
+	putchar("t");
+	putchar("c");
+	putchar("h");
+	putchar("a");
+	putchar("r");
+	putchar("\n");
 	return (0);
 }
