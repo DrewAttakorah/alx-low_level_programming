@@ -6,7 +6,7 @@
  * Return:void
  */
 
-void print_number(int n)
+void print_number(void)
 {
 	unsigned int x;
 
