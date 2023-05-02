@@ -1,22 +1,19 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
- * print_listint -
- * @h:
- * Return:
+ * print_listint - print all elements of the `listint_t` list
+ * @h: a linked list head
+ * Return: number of nodes
+ * drewattakorah-dev
  */
 size_t print_listint(const listint_t *h)
 {
-const listint_t *temp = h;
-size_t counter = 0;
+	const listint_t *c;
+	size_t counter;
 
-if (h == NULL)
-return (0);
-while (temp != NULL)
-{
-printf("%d\n", temp->n);
-counter++;
-temp = temp->next;
-}
-return (counter);
+	for (c = h, counter = 0; c != NULL; counter++, c = c->next)
+		printf("%d\n", c->n);
+
+	return (counter);
 }
