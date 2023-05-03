@@ -6,7 +6,7 @@
  * @h: double pointer to head of linked list
  * Description: This function should work for circular lists
  * Only loop through the list once
- * Return: size of the list that was free'd
+ * Return: size of the list that was free
  * drewattakorah
  */
 size_t free_listint_safe(listint_t **h)
