@@ -3,8 +3,8 @@
 /**
  * insert_nodeint_at_index - insert a new node at a given position
  * @head: double pointer to head
- * @index: it insert node at this index, starting count at 0
- * @n: a value to store in node
+ * @index: insert node at this index, starting count at 0
+ * @n: value to store in node
  * Return: Address of new node or NULL if failed
  * drewattakorah
  */

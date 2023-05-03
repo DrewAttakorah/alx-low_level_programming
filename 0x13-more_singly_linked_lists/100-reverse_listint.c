@@ -2,8 +2,8 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * reverse_listint - Reverses a `listint_t` linked list
- * @head: a double pointer to head
+ * reverse_listint - Reverse a `listint_t` linked list
+ * @head: double pointer to head
  * Description: Limited to going through loop only once.
  * cannot use `malloc` or `free` or arrays
  * a max of 2 variables.
