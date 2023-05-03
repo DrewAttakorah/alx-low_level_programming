@@ -12,7 +12,7 @@ void free_listint2(listint_t **head)
 	if (head == NULL)
 		return;
 
-        for (Node* curr = *head; curr != NULL; curr = *head) {
+        for (curr = *head; curr != NULL; curr = *head) {
         *head = (*head)->next;
         free(curr);
     }
