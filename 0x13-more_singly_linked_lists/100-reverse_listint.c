@@ -4,7 +4,9 @@
 /**
  * reverse_listint - Reverse a `listint_t` linked list
  * @head: double pointer to head
- * Description: ...
+ * Description: Limited to going through loop only once.
+ * cannot use `malloc` or `free` or arrays
+ * a max of 2 variables.
  * Return: pointer to first node of reversed list
  * drewattakorah
  */
