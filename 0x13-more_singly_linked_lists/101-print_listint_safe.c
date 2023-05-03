@@ -13,19 +13,19 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *current;
-	size_t counter;
+	size_t count;
 	const listint_t *hold;
 
 	current = head;
 	if (current == NULL)
 		exit(98);
 
-	counter = 0;
+	count = 0;
 	while (current != NULL)
 	{
 		hold = current;
 		current = current->next;
-		counter++;
+		count++;
 		printf("[%p] %d\n", (void *)hold, hold->n);
 
 		if (hold < current)
@@ -35,5 +35,5 @@ size_t print_listint_safe(const listint_t *head)
 		}
 	}
 
-	return (counter);
+	return (count);
 }
