@@ -3,22 +3,22 @@
 
 /**
  * free_listint_safe - free a `listint_t` list and set the head to null
- * @h: a double pointer to head of linked list
- * Description: This function works for circular lists
- * it only loop through the list once
- * Return: a size of the list that was free'd
+ * @h: double pointer to head of linked list
+ * Description: This function should work for circular lists
+ * Only loop through the list once
+ * Return: size of the list that was free'd
  * drewattakorah
  */
 size_t free_listint_safe(listint_t **h)
 {
 	listint_t *current, *hold;
-	size_t counter;
+	size_t count;
 
-	counter = 0;
+	count = 0;
 	current = *h;
 	while (current != NULL)
 	{
-		counter++;
+		count++;
 		hold = current;
 		current = current->next;
 		free(hold);
@@ -28,5 +28,5 @@ size_t free_listint_safe(listint_t **h)
 	}
 	*h = NULL;
 
-	return (counter);
+	return (count);
 }
