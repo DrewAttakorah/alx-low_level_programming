@@ -4,23 +4,22 @@
 /**
  * flip_bits - flip bits to convert one number to another number
  * @n: first number
- * @j: second number to convert to
+ * @m: second number to convert to
  * Return: number of bits that was needed to flip
- * drew attakorah
  */
-unsigned int flip_bits(unsigned long int n, unsigned long int j)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int i;
-	int j;
+	int m;
 
-	i = n ^ j;
-	j = 0;
+	i = n ^ m;
+	m = 0;
 
 	while (i)
 	{
-		j++;
+		m++;
 		i &= (i - 1);
 	}
 
-	return (j);
+	return (m);
 }
