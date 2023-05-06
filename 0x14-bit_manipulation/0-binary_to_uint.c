@@ -12,7 +12,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int result, exp;
-	int v;
+	int w;
 
 	if (b == NULL)
 		return (0);
@@ -23,7 +23,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 	}
 
-	for (expo = 1, result = 0, v--; v >= 0; v--, exp *= 2)
+	for (exp = 1, result = 0, v--; v >= 0; v--, exp *= 2)
 	{
 		if (b[v] == '1')
 			result += exp;
